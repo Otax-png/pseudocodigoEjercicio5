@@ -1,0 +1,31 @@
+Algoritmo Algoritmo5
+
+	Definir cantidad, contadorMM, contadorHm como Entero
+	contadorMM = 0
+	contadorHm = 0
+	
+	Escribir "Ingrese la cantidad de personas"
+	Leer cantidad
+	
+	Para i <- 1 Hasta cantidad Hacer
+		Mostrar "Ingrese la edad"
+		leer edad
+		Mostrar "Ingrese sexo (1 = femenino, 0 = masculino)"
+		leer sexo
+		
+		si edad >= 18 Entonces
+			si sexo = 1 Entonces
+				contadorMM = contadorMM +1
+			FinSi
+		SiNo
+			si edad < 18 Entonces
+				si sexo = 0 Entonces
+					contadorHm = contadorHm + 1
+				FinSi
+			FinSi
+		FinSi
+		
+	FinPara
+	
+	Escribir "Hay ",contadorMM," mujeres mayores de edad y ",contadorHm, " hombres menores de edad"
+FinAlgoritmo
